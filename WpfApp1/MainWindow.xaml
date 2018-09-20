@@ -1,0 +1,45 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        Loaded="Window_Loaded"
+        Closing="Window_Closing"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+
+            <ListBox ScrollViewer.HorizontalScrollBarVisibility="Hidden"></ListBox>
+
+            <Button x:Name="StartRecordBtn"
+                    Content="StartRecord"
+                    Click="StartRecordBtn_Click">
+            </Button>
+
+            <Button x:Name="StopRecordBtn"
+                    Content="StopRecord"
+                    Click="StopRecordBtn_Click">
+            </Button>
+            <Button x:Name="BothBtn" Content="Both" Click="BothBtn_Click"></Button>
+            <Button x:Name="SpeakerBtn" Content="Output" Click="SpeakerBtn_Click"></Button>
+            <Button x:Name="InputBtn" Content="Input" Click="InputBtn_Click"></Button>
+            <Button x:Name="NoneButton" Content="None" Click="NoneButton_Click"></Button>
+            <Button Content="testdll" Click="Button_Click"></Button>
+            <Button x:Name="CamBtn" Content="cam" Click="CamBtn_Click"></Button>
+            <Button x:Name="PreviewCamBtn" Content="PreviewCam" Click="PreviewCamBtn_Click"></Button>
+            <Button x:Name="LogoBtn" Content="Logo" Click="LogoBtn_OnClick"></Button>
+            <Button x:Name="QualityBtn" Content="Quality" Click="QualityBtn_OnClick"></Button>
+            <Button x:Name="GetRecordTimeBtn" Content="GetRecordTime" Click="GetRecordTimeBtn_OnClick"></Button>
+
+            <Button x:Name="MoveFileBtn" Content="MoveFile" Click="MoveFileBtn_Click"></Button>
+
+            <Button x:Name="DeleteFileBtn" Content="DeleteFile" Click="DeleteFileBtn_Click"></Button>
+
+            <Button x:Name="GetAudioDeviceCountBtn" Content="GetAudioDeviceCount" Click="GetAudioDeviceCountBtn_OnClick"></Button>
+            
+            <Button x:Name="SetCursorBtn" Content="SetCursor" Click="SetCursorBtn_OnClick"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

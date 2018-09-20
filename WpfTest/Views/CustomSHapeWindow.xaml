@@ -1,0 +1,47 @@
+﻿<Window x:Class="WpfTest.Views.CustomShapeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTest.Views"
+        mc:Ignorable="d"
+        Title="CustomSHapeWindow" 
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStyle="None"
+        Loaded="Window_Loaded"
+        Height="566" Width="56">
+    <Viewbox>
+        <StackPanel Height="566" Width="56" PreviewMouseDown="StackPanel_PreviewMouseDown">
+            <Path Stroke="Gray" StrokeThickness="0" Name="UIPath">
+                <Path.Fill>
+                    <SolidColorBrush Color="#70202123"></SolidColorBrush>
+                </Path.Fill>
+
+                <Path.Data>
+                    <PathGeometry>
+                        <PathFigure StartPoint="0,28">
+                            <ArcSegment Size="28,28" Point="56,28" IsLargeArc="False" SweepDirection="Clockwise"></ArcSegment>
+
+                            <LineSegment Point="56, 538"></LineSegment>
+
+                            <ArcSegment Size="28,28" Point="0,538" SweepDirection="Clockwise"></ArcSegment>
+                        </PathFigure>
+                    </PathGeometry>
+                </Path.Data>
+            </Path>
+        </StackPanel>
+    </Viewbox>
+
+    <!--<Grid Width="100" Height="50">
+        <Path Fill="Black">
+            <Path.Data>
+                <PathGeometry>
+                    <PathFigure StartPoint="0,25">
+                        <ArcSegment Point="100,25" Size="50,25"></ArcSegment>
+                    </PathFigure>
+                </PathGeometry>
+            </Path.Data>
+        </Path>
+    </Grid>-->
+</Window>

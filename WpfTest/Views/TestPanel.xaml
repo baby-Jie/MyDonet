@@ -1,0 +1,79 @@
+﻿<Window x:Class="WpfTest.Views.TestPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:lib="clr-namespace:SharedResources.Controls;assembly=SharedResources"
+        mc:Ignorable="d"
+        Title="TestPanel" Height="300" Width="300">
+    <Grid>
+        <StackPanel x:Name="LayoutRoot" Background="White">
+            <lib:TestFlipPanel x:Name="panel" 
+                               BorderBrush="DarkOrange" 
+                               BorderThickness="3"  
+                               CornerRadius="4"
+                               Margin="10">
+
+                <lib:TestFlipPanel.FrontContent>
+                    <!--<StackPanel Margin="6">
+                        <TextBlock TextWrapping="Wrap" 
+                                   Margin="3" 
+                                   FontSize="16" 
+                                   Foreground="DarkOrange"
+                                   Text="This is the front side of the FlipPanel." >
+                        </TextBlock>
+
+                        <Button Margin="3" Padding="3" Content="Button One"></Button>
+                        <Button Margin="3" Padding="3" Content="Button Two"></Button>
+                        <Button Margin="3" Padding="3" Content="Button Three"></Button>
+                        <Button Margin="3" Padding="3" Content="Button Four"></Button>
+                    </StackPanel>-->
+                    <StackPanel>
+                        <GroupBox Header="格线">
+                            <StackPanel Orientation="Horizontal">
+                                <Button Margin="5">
+                                <Image Source="/SharedResources;component/Resources/Images/Love.png"
+                                       Width="50">
+                                </Image>
+                            </Button>
+
+                            <Button Margin="5">
+                                <Image Source="/SharedResources;component/Resources/Images/Love.png"
+                                       Width="50">
+                                </Image>
+                            </Button>
+                            </StackPanel>
+                        </GroupBox>
+                        <!--<Rectangle Height="2" Margin="5,0,5,0" Fill="Red" HorizontalAlignment="Stretch"></Rectangle>-->
+                    </StackPanel>
+                </lib:TestFlipPanel.FrontContent>
+
+                <lib:TestFlipPanel.BackContent>
+                    <Grid Margin="6">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition ></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock TextWrapping="Wrap" 
+                                   Margin="3" 
+                                   FontSize="16" 
+                                   Foreground="DarkMagenta">
+                            This is the back side of the FlipPanel.
+                        </TextBlock>
+
+                        <Button Grid.Row="2" 
+                                Margin="3" 
+                                Padding="10" 
+                                Content="Flip Back to Front" 
+                                HorizontalAlignment="Center" 
+                                VerticalAlignment="Center" 
+                                Click="cmdFlip_Click">
+                        </Button>
+                    </Grid>
+                </lib:TestFlipPanel.BackContent>
+            </lib:TestFlipPanel>
+        </StackPanel>
+    </Grid>
+</Window>

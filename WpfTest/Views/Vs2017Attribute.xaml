@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfTest.Views.Vs2017Attribute"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTest.Views"
+        mc:Ignorable="d"
+        Title="Vs2017Attribute" Height="450" Width="800">
+    <StackPanel>
+        <Button Name="OutButton" 
+                Content="Out Function"
+                Margin="50,20"
+                Click="OutButton_OnClick">
+        </Button>
+        
+        <Button Name="OutTryParseButton"
+                Content="OutTryParse"
+                Margin="50,20"
+                Click="OutTryParseButton_OnClick"></Button>
+    </StackPanel>
+</Window>

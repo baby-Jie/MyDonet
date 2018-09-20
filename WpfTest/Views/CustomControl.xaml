@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfTest.Views.CustomControl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTest.Views"
+        xmlns:controls="clr-namespace:SharedResources.Controls;assembly=SharedResources"
+        mc:Ignorable="d"
+        Title="CustomControl" Height="300" Width="300">
+    <Grid>
+        <controls:ImageButton x:Name="CustomImageButton" 
+                              Content="Test Button"
+                              Width="100"
+                              Height="40">
+        </controls:ImageButton>
+    </Grid>
+</Window>

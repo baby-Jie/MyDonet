@@ -1,0 +1,55 @@
+﻿<Window x:Class="WpfTest.Views.ColorWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTest.Views"
+        mc:Ignorable="d"
+        Title="ColorWin" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel>
+            <Button x:Name="ColorToStringButton" 
+                    Content="ColorToString"
+                    Click="ColorToStringButton_OnClick">
+            </Button>
+            
+            <Button x:Name="NulableButton"
+                    Content="Nullable"
+                    Click="NulableButton_OnClick">
+            </Button>
+            <Button x:Name="DllInjectTestButton"
+                    Content="DllInject"
+                    Click="DllInjectTestButton_OnClick"></Button>
+        </StackPanel>
+        
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition MaxHeight="50" Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition MaxHeight="50" Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            
+            <Grid Grid.Row="0"
+                  Background="Red">
+                <Button Content="__cdecl Test"
+                        Click="ButtonBase_OnClick"></Button>
+            </Grid>
+            <Rectangle Grid.Row="1" 
+                       StrokeThickness="1"
+                       VerticalAlignment="Stretch"
+                       Stroke="#ffe7eaef" 
+                       Height="5" />
+
+            <Grid Grid.Row="2"
+                  Background="blue">
+                <Button Content="Row0" Click="ButtonBase1_OnClick"></Button>
+            </Grid>
+        </Grid>
+    </Grid>
+   
+</Window>

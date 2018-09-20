@@ -1,0 +1,55 @@
+﻿<Window x:Class="WpfTest.Views.VisualStateWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:lib="clr-namespace:SharedResources.Controls;assembly=SharedResources"
+        xmlns:local="clr-namespace:WpfTest.Views"
+        mc:Ignorable="d"
+        Title="VisualStateWin" Height="300" Width="300">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Chinese" x:Name="ChangedChineseButton" Click="ChangedChineseButton_Click"></Button>
+            <Button Content="Math" x:Name="ChangedMathButton" Click="ChangedMathButton_Click"></Button>
+            <Button Content="English" x:Name="ChangedEnglishButton" Click="ChangedEnglishButton_OnClick"></Button>
+        </StackPanel>
+
+        <lib:SubjectPanel Style="{StaticResource TestStyle}" Grid.Row="1" x:Name="SubjectPanel">
+
+            <lib:SubjectPanel.ChineseContent>
+                <StackPanel>
+                    <GroupBox Header="格线">
+                        <StackPanel Orientation="Horizontal">
+                            <!--<Button Margin="5">
+                                <Image Source="/SharedResources;component/Resources/Images/Love.png"
+                                       Width="50">
+                                </Image>
+                            </Button>
+
+                            <Button Margin="5">
+                                <Image Source="/SharedResources;component/Resources/Images/Love.png"
+                                       Width="50">
+                                </Image>
+                            </Button>-->
+                        </StackPanel>
+                    </GroupBox>
+                    <!--<Rectangle Height="2" Margin="5,0,5,0" Fill="Red" HorizontalAlignment="Stretch"></Rectangle>-->
+                </StackPanel>
+            </lib:SubjectPanel.ChineseContent>
+            
+            <lib:SubjectPanel.MathContent>
+                <Label Content="Math"></Label>
+            </lib:SubjectPanel.MathContent>
+            
+            <lib:SubjectPanel.EnglishContent>
+                <Label Content="English"></Label>
+            </lib:SubjectPanel.EnglishContent>
+        </lib:SubjectPanel>
+    </Grid>
+</Window>

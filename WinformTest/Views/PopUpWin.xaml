@@ -1,0 +1,63 @@
+﻿<Window x:Class="WpfTest.Views.PopUpWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTest.Views"
+        mc:Ignorable="d"
+        Title="PopUp" 
+        Height="450" Width="800"
+        LocationChanged="Window_LocationChanged"
+        Topmost="True"
+        Activated="Window_Activated"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowState="Maximized">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Popup x:Name="PopUpTest"
+               StaysOpen="True"
+               IsOpen="True"
+               Placement="Absolute"
+               HorizontalOffset="200"
+               VerticalOffset="200"
+              PreviewMouseLeftButtonDown="PopUpTest_PreviewMouseLeftButtonDown">
+            <!--PreviewMouseLeftButtonDown="PopUpTest_PreviewMouseLeftButtonDown">-->
+            <Border>
+                <StackPanel Orientation="Horizontal">
+                    <ListBox Name="TestListBox"
+                             SelectionChanged="TestListBox_SelectionChanged">
+                        <ListBox.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <VirtualizingStackPanel Orientation="Horizontal">
+                                </VirtualizingStackPanel>
+                            </ItemsPanelTemplate>
+                        </ListBox.ItemsPanel>
+
+                        <Rectangle Width="50" Height="50" Fill="Red" ></Rectangle>
+                        <Rectangle Width="50" Height="50" Fill="Blue"></Rectangle>
+                        <Rectangle Width="50" Height="50" Fill="Green"></Rectangle>
+
+                    </ListBox>
+                    <Button x:Name="PopButton"
+                        Content="PopButtonTest"
+                        Click="PopButton_Click">
+                    </Button>
+                </StackPanel>
+
+            </Border>
+        </Popup>
+        <Button HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="Show"
+                Click="Button_Click">
+        </Button>
+
+
+        <StackPanel Grid.Row="1" Background="Black"></StackPanel>
+    </Grid>
+</Window>

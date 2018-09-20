@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfTest.Views.TestList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTest.Views"
+        mc:Ignorable="d"
+        Title="TestList" Height="450" Width="800">
+    <StackPanel>
+        <Button Content="Get List Capacity" Margin="20" Click="ButtonBase_OnClick"></Button>
+        <Button Content="Get List Count" Margin="20" Name="GetCountButton" Click="GetCountButton_OnClick"></Button>
+        <Button Content="Get List Address" Margin="20" Name="GetListAddressButton" Click="GetListAddressButton_Click"></Button>
+        <Button Content="Changed First value" Margin="20" Name="ChangeFirstValueButton" Click="ChangeFirstValueButton_Click"></Button>
+        <Button Content="Insert One Item before the Second Item" Name="InsertItemButton" Click="InsertItemButton_Click"></Button>
+        <Button Content="Add One Item" Margin="20" Name="AddOneButton" Click="AddOneButton_OnClick"></Button>
+        <Button Content="Add Ten Item" Margin="20" Name="AddTenButton" Click="AddTenButton_OnClick"></Button>
+        <TextBox Name="NumberTextBox" Margin="20"></TextBox>
+        <Button Name="AddNumButton" Content="Add Specitical Number" Click="AddNumButton_OnClick"></Button>
+    </StackPanel>
+</Window>

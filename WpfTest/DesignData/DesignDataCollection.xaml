@@ -1,0 +1,8 @@
+﻿<views:StudentCollection xmlns:views="clr-namespace:WpfTest.Views"
+                         xmlns:models="clr-namespace:WpfTest.Models">
+
+    <models:Student Id="1" Name="smx" Score="11"></models:Student>
+    <models:Student Id="2" Name="sss" Score="22"></models:Student>
+    <models:Student Id="3" Name="mmm" Score="33"></models:Student>
+
+</views:StudentCollection>

@@ -1,0 +1,56 @@
+﻿<Window x:Class="WpfTest.Views.Notes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTest.Views"
+        mc:Ignorable="d"
+        Title="Notes" 
+        Height="450" Width="800"
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        >
+
+    <!--<WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="30" CornerRadius="10"></WindowChrome>
+    </WindowChrome.WindowChrome>-->
+
+    <Border CornerRadius="20" BorderThickness="1" Background="White">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Background="Blue"></Grid>
+
+            <StackPanel Grid.Row="1">
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="CloseBtn" 
+                    Content="close"
+                    Click="CloseBtn_Click">
+                    </Button>
+
+                    <Button x:Name="EnumButton"
+                    Content="EnumNote"
+                    Click="EnumButton_OnClick">
+                    </Button>
+
+                    <Button x:Name="StaticTestBtn"
+                    Content="{x:Static local:TestBinding.Str}"
+                    Click="StaticTestBtn_Click">
+                    </Button>
+
+                    <Button x:Name="GetDrivesInfoBtn"
+                            Content="GetDrivesInfo"
+                            Click="GetDrivesInfoBtn_Click">
+                    </Button>
+                </StackPanel>
+
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

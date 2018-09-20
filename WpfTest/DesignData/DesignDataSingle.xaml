@@ -1,0 +1,7 @@
+﻿<models:Student xmlns:models="clr-namespace:WpfTest.Models" 
+                Id="1" 
+                Name="smx"
+                Score="99">
+
+</models:Student>
+    
