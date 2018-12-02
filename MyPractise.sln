@@ -31,6 +31,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestDll", "TestDll\TestDll.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{4CDF37A4-85F9-4883-8628-30896EBDAA5E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DpiTheme", "DpiTheme", "{00197EB9-7BF9-4513-A70A-34AEF0643478}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DpiWinOne", "DpiWinOne\DpiWinOne.csproj", "{52938B83-1336-44F3-8F95-694F0A844D85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -196,9 +200,24 @@ Global
 		{4CDF37A4-85F9-4883-8628-30896EBDAA5E}.Release|x64.Build.0 = Release|Any CPU
 		{4CDF37A4-85F9-4883-8628-30896EBDAA5E}.Release|x86.ActiveCfg = Release|x86
 		{4CDF37A4-85F9-4883-8628-30896EBDAA5E}.Release|x86.Build.0 = Release|x86
+		{52938B83-1336-44F3-8F95-694F0A844D85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52938B83-1336-44F3-8F95-694F0A844D85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52938B83-1336-44F3-8F95-694F0A844D85}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{52938B83-1336-44F3-8F95-694F0A844D85}.Debug|x64.Build.0 = Debug|Any CPU
+		{52938B83-1336-44F3-8F95-694F0A844D85}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{52938B83-1336-44F3-8F95-694F0A844D85}.Debug|x86.Build.0 = Debug|Any CPU
+		{52938B83-1336-44F3-8F95-694F0A844D85}.Release|Any CPU.ActiveCfg = Release|x86
+		{52938B83-1336-44F3-8F95-694F0A844D85}.Release|Any CPU.Build.0 = Release|x86
+		{52938B83-1336-44F3-8F95-694F0A844D85}.Release|x64.ActiveCfg = Release|Any CPU
+		{52938B83-1336-44F3-8F95-694F0A844D85}.Release|x64.Build.0 = Release|Any CPU
+		{52938B83-1336-44F3-8F95-694F0A844D85}.Release|x86.ActiveCfg = Release|Any CPU
+		{52938B83-1336-44F3-8F95-694F0A844D85}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{52938B83-1336-44F3-8F95-694F0A844D85} = {00197EB9-7BF9-4513-A70A-34AEF0643478}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4997E8C6-363A-4C47-9145-0BB02ECD8977}
